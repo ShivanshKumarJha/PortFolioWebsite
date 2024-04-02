@@ -37,7 +37,7 @@
 
 body {
   background-color: var(--color-primary);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.1rem;
   color: var(--color-white);
   transition: all 0.4s ease-in-out;
@@ -169,7 +169,7 @@ section {
   top: 0;
   z-index: -1;
   -webkit-clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
-          clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
+  clip-path: polygon(0 0, 46% 0, 79% 100%, 0% 100%);
 }
 .header-content .left-header .image {
   border-radius: var(--br-sm-2);
@@ -183,7 +183,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: all 0.4s ease-in-out;
   filter: grayscale(100%);
 }
@@ -250,7 +250,7 @@ section {
   letter-spacing: 2px;
 }
 .about-container .right-about .about-item .abt-text .small-text::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 0;
   top: 15px;
@@ -337,7 +337,7 @@ section {
   position: relative;
 }
 .stat-title::before {
-  content: "";
+  content: '';
   position: absolute;
   left: 50%;
   top: 0;
@@ -417,7 +417,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-radius: 15px;
 }
 .portfolios .portfolio-item .hover-items {
@@ -475,6 +475,110 @@ section {
   transform: scale(1);
 }
 
+.portfolios .portfolio-item .project-name {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.portfolios .portfolio-item .project-name h3 {
+  color: var(--color-white);
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* TODO About the experience/internships */
+.about-experience {
+  padding-bottom: 4rem;
+}
+
+.about-experience .timeline {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 2rem;
+}
+
+.about-experience .timeline .timeline-item {
+  position: relative;
+  padding-left: 3rem;
+  border-left: 1px solid var(--color-grey-5);
+}
+
+.about-experience .timeline .timeline-item .tl-icon {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  background-color: var(--color-secondary);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-experience .timeline .timeline-item .tl-icon i {
+  font-size: 1.3rem;
+}
+
+.about-experience .timeline .timeline-item .tl-duration {
+  padding: 0.2rem 0.6rem;
+  background-color: var(--color-grey-5);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.about-experience .timeline .timeline-item h5 {
+  padding: 1rem 0;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.about-experience .timeline .timeline-item h5 span {
+  color: var(--color-grey-2);
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.about-experience .timeline .timeline-item p {
+  color: var(--color-grey-2);
+}
+
+.about-experience .timeline .timeline-item .tl-icon {
+  position: absolute;
+  left: -27px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-experience .timeline .timeline-item .tl-icon img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.about-experience .timeline .timeline-item ul {
+  margin-top: 1rem;
+  padding-left: 2rem;
+}
+
+.about-experience .timeline .timeline-item ul li {
+  margin-bottom: 0.5rem;
+}
+
 .blogs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -502,7 +606,7 @@ section {
   width: 100%;
   height: 300px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   filter: grayscale(100%);
@@ -652,7 +756,7 @@ section {
   padding: 1rem;
 }
 .main-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   right: 0;
@@ -929,4 +1033,4 @@ section {
   .main-title h2 .bg-text {
     font-size: 4rem;
   }
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */
