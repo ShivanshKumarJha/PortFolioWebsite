@@ -88,3 +88,16 @@ window.onload = function () {
   css.innerHTML = '.txt-rotate > .wrap { border-right: 0.08em solid #666 }';
   document.body.appendChild(css);
 };
+
+// To fetch the leetcode rating
+fetch('https://alfa-leetcode-api.onrender.com/kumarjhashivansh/contest')
+  .then(response => response.json())
+  .then(data => {
+    const leetCodeRating = Math.round(data.contestRating);
+    document.getElementById('leetcode-rating-value').textContent =
+      leetCodeRating;
+  })
+  .catch(error => {
+    console.error('Error fetching LeetCode rating:', error);
+    document.getElementById('leetcode-rating-value').textContent = 'N/A';
+  });
