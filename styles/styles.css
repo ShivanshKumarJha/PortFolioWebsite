@@ -1042,3 +1042,56 @@ section {
     font-size: 4rem;
   }
 }
+
+/* General Styles */
+ul.experience-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li.experience-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.experience-item p {
+  margin: 0;
+}
+
+/* For Desktop */
+@media (min-width: 1024px) {
+  ul.experience-list {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    text-align: justify; 
+  }
+
+  li.experience-item {
+    width: 48%; 
+    justify-content: space-between; 
+    text-align: justify;
+  }
+}
+
+/* For Tablet and Mobile */
+@media (max-width: 1023px) {
+  ul.experience-list {
+    display: block; 
+  }
+
+  li.experience-item {
+    width: 100%; 
+    justify-content: flex-start;
+    margin-bottom: 15px;
+  }
+
+  li.experience-item p {
+    margin-right: 15px; 
+  }
+}
